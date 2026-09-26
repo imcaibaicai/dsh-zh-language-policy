@@ -1,0 +1,36 @@
+{
+  "name": "dsh-zh-language-policy",
+  "description": "DSH host plugin that anchors a bilingual language contract at the very top of every system prompt: English chain-of-thought, Simplified-Chinese user-facing prose, and self-contained final summaries. Pure plugin, no core changes.",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "language",
+    "chinese",
+    "system-prompt",
+    "agent"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js"
+  ],
+  "scripts": {
+    "bundle": "echo noop: plain JS host plugin; edit lib/index.js directly"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imcaibaicai/dsh-zh-language-policy.git"
+  }
+}
